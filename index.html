@@ -136,7 +136,44 @@
 				
 				<div id="skrypty"> 
     					<h3>Zadanie 1 – ładowanie skryptów</h3> 
-    					<!-- Osoba A: kod zadania 1 --> 
+    					<script defer src="js/imie.js"></script> 
+					<script defer src="js/powitanie.js"></script>
+					<p><b>a)</p>
+					<p><b>Wariant 1 - bez atrybutu:</p>
+					<p>Kiedy pojawia się zapytanie >Jak masz na imię?< to strona
+					nie ładuje się w całości (jest biała). Po wpisaniu imienia
+					strona się ładuje w całości.</p>
+					<p><b>Wariant 2 - defer i Wariant 3 - async:</p>
+					<p>Strona wyświetla się w całości.</p>
+					<p><b>b)</p>
+					<p><b>Wariant 1 - bez atrybutu:</p>
+					<p>Powitanie wyświetliło pod >Projekt 1/ Zadanie 1 - ładowanie
+					skryptow< jako >Ćw. 1. Witaj,Barbara<.</p>
+					<p><b>Wariant 2 - defer:</p>
+					<p>Powitanie się nie wyświetliło. Konsola wyświetla ostrzeżenie,
+					że nie można pisać w dokumencie kiedy sprasował się cały dokument
+					a skrypty wykonały się po tym.</p>
+					<p><b>Wariant 3 - async:</p>
+					<p>Powitanie również się nie wyświetliło podobnie jak u defer i
+					dostałam ostrzeżenie w konsoli.</p>	
+					<p><b>c)</p>
+					<p><b>Wariant 1 - bez atrybutu:</p>
+					<p>Konsola wypisała >imie.js: element #quiz = null< - 
+					#quiz nie został odnaleziony.</p>
+					<p><b>Wariant 2 - defer i Wariant 3 - async:</p>
+					<p>Konsola wypisała >imie.js: element #quiz = > div#quiz< 
+					- quiz został odnaleziony.</p>
+					<p>--------------------------------------------------------</p>
+					<p>document.write nie nadaje się do skryptów ładowanych z defer/async,
+					ponieważ nie można pisać w takim dokumencie kiedy się już cały
+					sprasował. Sktypty wykonują dopiero po sprasowaniu dokumentu (defer)
+					lub po pobraniu skryptu, gdy dokument może być już sprasowany (async) - dlatego
+					aby wyświetlić powitanie potrzeba nam danych pochodzących
+					przez textContent, a nie jako fragment HTML</p>
+
+
+					
+					 
 				</div> 
  
 				<div id="tablice"> 
