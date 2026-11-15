@@ -29,6 +29,7 @@ document.getElementById('lista').append(nowy2);
 const nowy3=document.createElement('li');
 nowy3.innerHTML=akapity.length+": liczba akapitów w sekcji projekt1";
 document.getElementById('lista').append(nowy3);
-//po usunięciu defer zmieniła się liczba formularzy i akapitów w projekcie
-
+//po usunięciu defer zmieniła się liczba formularzy i akapitów w projekcie,
+//ponieważ parser się zatrzymał na skrypcie na bloku #dom, a formularz kontaktowy
+//leży w dokumencie poniżej tego bloki
 
