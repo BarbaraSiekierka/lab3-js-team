@@ -2,6 +2,7 @@ function startQuiz() {
 //let score = 0 przed pętlą, aby wynik za każdym razem sie nie zerował
 let score = 0;
 const liczba = questions.length;
+const bladne = [];
 for(let j=0;j<liczba;j++){
 let question = questions[j]
 let answer = prompt(question[0],'');
@@ -15,9 +16,15 @@ score++;
 }
  else {
 alert('Błąd. Prawidłowa odpowiedź to ' +question[1]);
+bladne.push(question[0])
 }
 }
 document.getElementById('wynik').append('Wynik '+score+'/'+questions.length);
+for(let i=0;i<bladne.length;i++){
+let nowy=document.createElement('li');
+nowy.innerHTML=bladne[i];
+document.getElementById('lis').append(nowy);
+}
 }
 
 document.getElementById('startQuiz').addEventListener('click',startQuiz);
