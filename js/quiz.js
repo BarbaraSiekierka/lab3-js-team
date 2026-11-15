@@ -12,6 +12,7 @@ score++;
 alert('Błąd. Prawidłowa odpowiedź to ' +question[1]);
 }
 }
+document.getElementById('wynik').append('Wynik '+score+'/'+questions.length);
 }
 document.getElementById('startQuiz').addEventListener('click',startQuiz);
 
