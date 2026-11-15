@@ -24,7 +24,7 @@ document.write(' (elementów: ' +tablica.length + ')</p>');
 document.write('<p> Sprawdzenie czy element Thunderbolts* znajduje się w tablicy: '+tablica.includes('Thunderbolts*'));
 document.write(' i na jakiej pozycji się znajduje: ' +tablica.indexOf('Thunderbolts*')+'</p>');
 
-document.write('Nowa tablica:');
+document.write('<p><strong>Nowa tablica:</strong></p>');
 const nowaTablica = [
 	'Harry Potter i Kamień Filozoficzny',
 	'Chłopi',
@@ -39,7 +39,25 @@ nowaTablica.unshift('Katedra');
 const removedItem1 = nowaTablica.pop();
 const removedItem2 = nowaTablica.shift();
 document.write('<p>Pierwszy usuniety element metodą pop(): <strong>');
-document.write(removedItem1 + '</strong>/</p>');
+document.write(removedItem1 + '</strong></p>');
 document.write('<p>Drugi usuniety element metodą shift(): <strong>');
 document.write(removedItem2 + '</strong></p>');
 document.write('<p> Nowa tablica po usunięciu elementów:'+ nowaTablica.join(',') + '</p>');
+
+document.write('<p><strong>Tablica tablic:</strong></p>');
+const oceny = [
+	['JavaScript',5],
+	['Git',4],
+	['HTML',5]
+];
+console.log(oceny[1]);		//['Git',4]
+console.log(oceny[1][0]); 	//'Git' - pierwszy indeks: który wiersz,
+				//drugi: która kolumna
+console.log(oceny[1][1]);	//4
+document.write('<p>Drugi element: ');
+document.write('nazwa: <strong>');
+document.write(oceny[1][0] + '</strong>');
+document.write(' ,ocena: <strong>');
+document.write(oceny[1][1] + '</strong></p>');
+
+
