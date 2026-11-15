@@ -32,4 +32,3 @@ document.getElementById('lista').append(nowy3);
 //po usunięciu defer zmieniła się liczba formularzy i akapitów w projekcie,
 //ponieważ parser się zatrzymał na skrypcie na bloku #dom, a formularz kontaktowy
 //leży w dokumencie poniżej tego bloki
-
