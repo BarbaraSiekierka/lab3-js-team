@@ -1,12 +1,16 @@
 function startQuiz() {
+//let score = 0 przed pętlą, aby wynik za każdym razem sie nie zerował
 let score = 0;
-const question = questions[0];
-const answer = prompt(question[0],'');
+const liczba = questions.length;
+for(let j=0;j<liczba;j++){
+let question = questions[j]
+let answer = prompt(question[0],'');
 if (Number(answer) === question[1]){
 alert('Prawidłowa odpowiedź!');
 score++;
 } else {
 alert('Błąd. Prawidłowa odpowiedź to ' +question[1]);
+}
 }
 }
 document.getElementById('startQuiz').addEventListener('click',startQuiz);
