@@ -23,3 +23,15 @@ document.write('<p>Tablica: ' + tablica.join(', '));
 document.write(' (elementów: ' +tablica.length + ')</p>');
 document.write('<p> Sprawdzenie czy element Thunderbolts* znajduje się w tablicy: '+tablica.includes('Thunderbolts*'));
 document.write(' i na jakiej pozycji się znajduje: ' +tablica.indexOf('Thunderbolts*')+'</p>');
+
+const nowaTablica = [
+	'Harry Potter i Kamień Filozoficzny',
+	'Chłopi',
+	'Lalka',
+	'Dziady cz III'
+];
+document.write('<p>Pierwszy element to <strong>');
+document.write(nowaTablica[0] + '</strong></p>');
+document.write('<p>Ostatni element to <strong>');
+document.write(nowaTablica[nowaTablica.length-1]);
+nowaTablica.unshift('Katedra');
