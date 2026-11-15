@@ -17,3 +17,18 @@ obrazki+": liczba obrazków na stronie; "+
 odnosniki+": liczba odnośników na stronie; "+
 akapity.length+": liczba akapitów w sekcji projekt1 "
 );
+const naglowek=document.querySelector('#dom h3')
+naglowek.textContent = 'Zadanie 4- elementy ze strony';
+naglowek.classList.add('text-success');
+const nowy1=document.createElement('li');
+nowy1.innerHTML=formularze+": liczba formularzy na stronie";
+document.getElementById('lista').append(nowy1);
+const nowy2=document.createElement('li');
+nowy2.innerHTML=obrazki+": liczba obrazków na stronie";
+document.getElementById('lista').append(nowy2);
+const nowy3=document.createElement('li');
+nowy3.innerHTML=akapity.length+": liczba akapitów w sekcji projekt1";
+document.getElementById('lista').append(nowy3);
+//po usunięciu defer zmieniła się liczba formularzy i akapitów w projekcie
+
+
