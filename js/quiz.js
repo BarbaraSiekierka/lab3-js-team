@@ -6,14 +6,20 @@ for(let j=0;j<liczba;j++){
 let question = questions[j]
 let answer = prompt(question[0],'');
 if (Number(answer) === question[1]){
+if(answer === null || answer === ''){
+alert('Błąd. Prawidłowa odpowiedź to '+question[1]);}
+else{
 alert('Prawidłowa odpowiedź!');
 score++;
-} else {
+}
+}
+ else {
 alert('Błąd. Prawidłowa odpowiedź to ' +question[1]);
 }
 }
 document.getElementById('wynik').append('Wynik '+score+'/'+questions.length);
 }
+
 document.getElementById('startQuiz').addEventListener('click',startQuiz);
 
 const questions = [
