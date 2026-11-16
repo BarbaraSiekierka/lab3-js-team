@@ -32,3 +32,20 @@ document.getElementById('lista').append(nowy3);
 //po usunięciu defer zmieniła się liczba formularzy i akapitów w projekcie,
 //ponieważ parser się zatrzymał na skrypcie na bloku #dom, a formularz kontaktowy
 //leży w dokumencie poniżej tego bloki
+
+//zadanie 5
+let i = 0;
+let polowa = Math.floor(tablica.length/2);
+let wynik_1 = "Wyświetlenie pierwszej połowy tablicy filmów (pętla while): ";
+while(i<polowa){
+	wynik_1 += tablica[i]+", ";
+	i++; 
+}
+
+document.getElementById("while").textContent = wynik_1;
+
+let wynik_2 = "Wyświetlenie drugiej połowy tablicy filmów (pętla for): ";
+for(let i=polowa; i<tablica.length; i++){
+ 	wynik_2 += tablica[i]+", ";
+}
+document.getElementById("for").textContent = wynik_2;
