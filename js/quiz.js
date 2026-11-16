@@ -32,5 +32,7 @@ document.getElementById('startQuiz').addEventListener('click',startQuiz);
 const questions = [
 ['Ile razy Faker wygrał Mistrzostwa Świata w League of legends (Worlds)?', 6],
 ['W krórym roku miała premierę Kraina Lodu?',2013],
-['Które głodowe igrzyska odbywają się w pierwszej części Igrzysk Śmierci?',74]
+['Które głodowe igrzyska odbywają się w pierwszej części Igrzysk Śmierci?',74],
+['Ile przyjaciółek ma Twilight Sparkle?',5],
+['I love you ...',3000]
 ];
