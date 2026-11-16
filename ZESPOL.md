@@ -12,6 +12,9 @@ login GitHub: Maria-Sie
  
 | Zadanie                     | Autor   | Recenzja / wkład partnera  | 
 |-----------------------------|---------|----------------------------| 
-| 2. Tablica z filmami        | Osoba B | Osoba A – review PR        | 
-| 4. DOM                      | Osoba B | Osoba A – review PR        | 
-| 6. Pętle, funkcje, quiz     | Osoba B | Osoba A – +2 pytania quiz  | 
+| 1. Ładowanie skryptów       | Osoba A | Osoba B – review PR        | 
+| 2. Tablica z filmami        | Osoba B | Osoba A – review PR        |
+| 3. Tablice cd.              | Osoba A | Osoba B – review PR        | 
+| 4. DOM                      | Osoba B | Osoba A – review PR        |
+| 5. Pętle, funkcje, zdarzenia| Osoba A | Osoba B – dane w `zespol`  | 
+| 6. Pętle, funkcje, quiz     | Osoba B | Osoba A – +2 pytania quiz  |
