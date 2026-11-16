@@ -33,3 +33,40 @@ document.getElementById('lista').append(nowy3);
 //ponieważ parser się zatrzymał na skrypcie na bloku #dom, a formularz kontaktowy
 //leży w dokumencie poniżej tego bloki
 
+//zadanie 5
+let i = 0;
+let polowa = Math.floor(tablica.length/2);
+let wynik_1 = "Wyświetlenie pierwszej połowy tablicy filmów (pętla while): ";
+while(i<polowa){
+	wynik_1 += tablica[i]+", ";
+	i++; 
+}
+
+document.getElementById("while").textContent = wynik_1;
+
+let wynik_2 = "Wyświetlenie drugiej połowy tablicy filmów (pętla for): ";
+for(let i=polowa; i<tablica.length; i++){
+ 	wynik_2 += tablica[i]+", ";
+}
+document.getElementById("for").textContent = wynik_2;
+
+function policzZnaki(tekst){
+	return tekst.length;
+}
+
+let wynik_3 = "Wyświetlenie elementów tablicy książek z ich długością: ";
+for(const tab of nowaTablica){
+	wynik_3 += tab + " długość = " + policzZnaki(tab) + " ,";
+}
+document.getElementById("forof").textContent = wynik_3;
+
+function pokazDane(){
+	alert(
+	document.getElementById("nazwisko").textContent + '\n' +
+	document.getElementById("imie").textContent + '\n' +
+	document.getElementById("grupa").textContent + '\n' +
+	document.getElementById("email").textContent + '\n' +
+	document.getElementById("indeks").textContent
+	);
+}
+document.getElementById('pokazDane').addEventListener('click', pokazDane);
