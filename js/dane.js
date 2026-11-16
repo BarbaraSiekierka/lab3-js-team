@@ -1,6 +1,6 @@
 const zespol = [
 	['Siekierka', 'Barbara', '2', '21555@student.ans-elblag.pl', '21555'],
-	['???', '???', '?', '???', '???']
+	['Siekierka', 'Maria', '2', '21558@student.ans-elblag.pl', '21558']
 ];
 /*const nazwiska = zespol[0][0] + ', ' + zespol[1][0]; 
 document.getElementById('nazwisko').textContent = nazwiska; 
