@@ -49,3 +49,24 @@ for(let i=polowa; i<tablica.length; i++){
  	wynik_2 += tablica[i]+", ";
 }
 document.getElementById("for").textContent = wynik_2;
+
+function policzZnaki(tekst){
+	return tekst.length;
+}
+
+let wynik_3 = "Wyświetlenie elementów tablicy książek z ich długością: ";
+for(const tab of nowaTablica){
+	wynik_3 += tab + " długość = " + policzZnaki(tab) + " ,";
+}
+document.getElementById("forof").textContent = wynik_3;
+
+function pokazDane(){
+	alert(
+	document.getElementById("nazwisko").textContent + '\n' +
+	document.getElementById("imie").textContent + '\n' +
+	document.getElementById("grupa").textContent + '\n' +
+	document.getElementById("email").textContent + '\n' +
+	document.getElementById("indeks").textContent
+	);
+}
+document.getElementById('pokazDane').addEventListener('click', pokazDane);
